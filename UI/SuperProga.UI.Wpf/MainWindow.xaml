@@ -40,16 +40,16 @@
             <Button Grid.Column="2" Grid.Row="0" Margin="5" FontSize="24" Content="3" Command="{Binding EnterSignCommand}" CommandParameter="3"/>
             <Button Grid.Column="0" Grid.Row="1" Margin="5" FontSize="24" Content="4" Command="{Binding EnterSignCommand}" CommandParameter="4"/>
             <Button Grid.Column="1" Grid.Row="1" Margin="5" FontSize="24" Content="5" Command="{Binding EnterSignCommand}" CommandParameter="5"/>
-            <Button Grid.Column="2" Grid.Row="1" Margin="5" FontSize="24" Content="6" />
-            <Button Grid.Column="0" Grid.Row="2" Margin="5" FontSize="24" Content="7" />
-            <Button Grid.Column="1" Grid.Row="2" Margin="5" FontSize="24" Content="8" />
-            <Button Grid.Column="2" Grid.Row="2" Margin="5" FontSize="24" Content="9" />
-            <Button Grid.Column="1" Grid.Row="3" Margin="5" FontSize="24" Content="0" />
-            
-            <Button Grid.Column="3" Grid.Row="0" Margin="15,5,5,5" FontSize="24" Content="+" />
-            <Button Grid.Column="3" Grid.Row="1" Margin="15,5,5,5" FontSize="24" Content="-" />
-            <Button Grid.Column="3" Grid.Row="2" Margin="15,5,5,5" FontSize="24" Content="*" />
-            <Button Grid.Column="3" Grid.Row="3" Margin="15,5,5,5" FontSize="24" Content="/" />
+            <Button Grid.Column="2" Grid.Row="1" Margin="5" FontSize="24" Content="6" Command="{Binding EnterSignCommand}" CommandParameter="6" />
+            <Button Grid.Column="0" Grid.Row="2" Margin="5" FontSize="24" Content="7" Command="{Binding EnterSignCommand}" CommandParameter="7" />
+            <Button Grid.Column="1" Grid.Row="2" Margin="5" FontSize="24" Content="8" Command="{Binding EnterSignCommand}" CommandParameter="8" />
+            <Button Grid.Column="2" Grid.Row="2" Margin="5" FontSize="24" Content="9" Command="{Binding EnterSignCommand}" CommandParameter="9" />
+            <Button Grid.Column="1" Grid.Row="3" Margin="5" FontSize="24" Content="0" Command="{Binding EnterSignCommand}" CommandParameter="0" />
+
+            <Button Grid.Column="3" Grid.Row="0" Margin="15,5,5,5" FontSize="24" Content="+" Command="{Binding EnterSignCommand}" CommandParameter="+" />
+            <Button Grid.Column="3" Grid.Row="1" Margin="15,5,5,5" FontSize="24" Content="-" Command="{Binding EnterSignCommand}" CommandParameter="-" />
+            <Button Grid.Column="3" Grid.Row="2" Margin="15,5,5,5" FontSize="24" Content="*" Command="{Binding EnterSignCommand}" CommandParameter="*" />
+            <Button Grid.Column="3" Grid.Row="3" Margin="15,5,5,5" FontSize="24" Content="/" Command="{Binding EnterSignCommand}" CommandParameter="/" />
             <Button Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="4" Margin="5,20,5,20" FontSize="24" Content="=" />
 
 

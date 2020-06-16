@@ -7,7 +7,7 @@ namespace SuperProga.UI.Wpf.ViewModels
 {
     public class MainViewModel : INotifyPropertyChanged
     {
-        private string result="333";
+        private string result;
 
         public string Result
         {
@@ -28,7 +28,7 @@ namespace SuperProga.UI.Wpf.ViewModels
 
         private void EnterSign(object obj)
         {
-            
+
         }
 
 
