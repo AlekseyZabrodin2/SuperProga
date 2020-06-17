@@ -1,6 +1,9 @@
 ﻿using SuperProga.UI.Wpf.Commands;
 using System;
 using System.ComponentModel;
+using System.Dynamic;
+using System.Runtime.Remoting.Channels;
+using System.Text;
 using System.Windows.Input;
 
 namespace SuperProga.UI.Wpf.ViewModels
@@ -26,12 +29,21 @@ namespace SuperProga.UI.Wpf.ViewModels
             EnterSignCommand = new SuperCommand(EnterSign);
         }
 
+        StringBuilder sb = new StringBuilder("");
+
         private void EnterSign(object obj)
         {
+            Result = sb.Append(obj.ToString()).ToString();
 
         }
 
+       
+          
 
+
+
+       
+            
         #region INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
 
