@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace SuperProga.Domain.Core
+﻿namespace SuperProga.Domain.Core
 {
-    public class Calculator
+  public class Calculator:ICalculator
+  {
+    public string Evaluate(string expression)
     {
-        public int Summ(int left, int right)
-        {
-            return left + right;
-        }
+      return "Типа посчитал";
     }
+  }
 }

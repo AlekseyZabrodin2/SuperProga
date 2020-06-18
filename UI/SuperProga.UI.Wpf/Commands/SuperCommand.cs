@@ -8,6 +8,7 @@ namespace SuperProga.UI.Wpf.Commands
     public class SuperCommand : ICommand
     {
         Action<object> _action;
+        Func<bool> _canExecuteFunc;
 
         public event EventHandler CanExecuteChanged
         {
@@ -17,7 +18,7 @@ namespace SuperProga.UI.Wpf.Commands
 
         public bool CanExecute(object parameter)
         {
-            return true;
+          return _canExecuteFunc == null || _canExecuteFunc();
         }
 
         public void Execute(object parameter)
@@ -26,9 +27,10 @@ namespace SuperProga.UI.Wpf.Commands
 
         }
 
-        public SuperCommand(Action<object> action)
+        public SuperCommand(Action<object> action, Func<bool> canExecuteFunc=null)
         {
             _action = action;
+           _canExecuteFunc = canExecuteFunc;
         }
     }
 }
